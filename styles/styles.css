@@ -22,6 +22,8 @@ html {
     box-sizing: inherit;
 }
 
+/**Globals**/
+
 h1 {
     font-size: 3.5rem;
     text-align: center;
@@ -35,6 +37,8 @@ body {
     font-family: var(--font);
 }
 
+/**Just in case**/
+
 .container {
     display: flex;
     justify-content: center;
@@ -43,6 +47,19 @@ body {
 
 .container2 {
     padding: 1rem 3rem;
+}
+
+.no_magin_top {
+    margin-top: 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.container3 {
+    display: flex;
+    align-items: center;
 }
 
 /**Index (login and register)**/
@@ -216,5 +233,57 @@ body {
     .food_img {
         width: 80%;
         height: 20rem;
+    }
+}
+
+/**More info**/
+
+.product_info {
+    background-color: var(--gray);
+    border-radius: 2rem;
+    display: block;
+    padding: 3rem;
+    width: 95%;
+}
+
+.food_info_img {
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.info {
+    font-size: 2rem;
+}
+
+.product_form {
+    display: block;
+}
+
+.select {
+    background-color: var(--dark_gray);
+    border-radius: 1rem;   
+    border-style: none;
+    font-weight: bold;
+    height: 4rem;
+    margin-left: 1rem;
+    text-align: center;
+    width: 15rem;
+}
+
+@media (min-width: 768px) {
+    .product_info {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 2fr;
+        width: 80%;
+    }
+
+    .food_info_img {
+        width: 95%;
+    }
+
+    .w-100 {
+        width: 50%;
     }
 }
