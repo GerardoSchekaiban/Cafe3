@@ -22,6 +22,15 @@ html {
     box-sizing: inherit;
 }
 
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
 body {
     font-family: var(--font);
 }
@@ -30,6 +39,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container2 {
+    padding: 1rem 3rem;
 }
 
 /**Index (login and register)**/
@@ -109,7 +122,7 @@ body {
     }
 }
 
-/**Responsive menu**/
+/**Responsive menu and nav bar**/
 
 .header {
     background-color: var(--primary_color);
@@ -173,5 +186,35 @@ body {
         opacity: 1;
         padding: 0 3rem;
         visibility: visible;
+    }
+}
+
+/**Menu**/
+
+.product {
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.food_img {
+    border-radius: 2rem ;
+    height: 25rem;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .container2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        justify-content: space-between;
+    }
+
+    .food_img {
+        width: 80%;
+        height: 20rem;
     }
 }
