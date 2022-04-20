@@ -9,6 +9,7 @@
     --green: #008037;
     --daek_green: #213E1A;
     --orange: #D47333;
+    --yellow: #FFDE59;
     --font: 'Open Sans', sans-serif;
 }
 
@@ -31,7 +32,11 @@ body {
     align-items: center;
 }
 
-/**Index**/
+.yellow {
+    color: var(--yellow);
+}
+
+/**Index (login and register)**/
 
 .index_background {
     background-image: url(../assets/background.jpeg);
@@ -105,5 +110,72 @@ body {
 
     .logo_img {
         width: 22rem;
+    }
+}
+
+/**Responsive menu**/
+
+.header {
+    background-color: var(--primary_color);
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.logo_img_bar {
+    width: 20rem;
+}
+
+.ham_menu {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    width: 5rem;
+}
+
+.navigation {
+    height: 0;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear, height .5s linear; 
+    visibility: hidden;
+}
+
+.nav_link {
+    display: block;
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    color: var(--yellow);
+}
+
+.display {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        font-size: 2.5rem;
+        gap: 5rem;
+        height: 6rem;
+        justify-content: space-between;
+        opacity: 1;
+        padding: 0 3rem;
+        visibility: visible;
     }
 }
