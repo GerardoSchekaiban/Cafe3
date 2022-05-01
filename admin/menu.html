@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
     
     <!--Styles-->
-    <link rel="stylesheet" href="styles.css/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     
     <title>Admin - Cafe3.0</title>
 </head>
@@ -24,11 +24,11 @@
 
         <div class="sidebar-nav">
             <ul class="navigation">
-                <li><a class="nav-li" href="">Panel de control</a></li>
-                <li><a class="nav-li active" href="">Menú</a></li>
-                <li><a class="nav-li" href="">Pedidos</a></li>
-                <li><a class="nav-li" href="">Usuarios</a></li>
-                <li><a class="nav-li" href="">Cerrar sesión</a></li>
+                <li><a class="nav-li" href="panel.html">Panel de control</a></li>
+                <li><a class="nav-li active" href="menu.html">Menú</a></li>
+                <li><a class="nav-li" href="pedidos.html">Pedidos</a></li>
+                <li><a class="nav-li" href="usuarios.html">Usuarios</a></li>
+                <li><a class="nav-li" href="cerrarsesion.html">Cerrar sesión</a></li>
             </ul>
         </div>
     </aside>
@@ -36,9 +36,128 @@
     <main class="main-content">
         <div class="title">
             <h1>Platillos</h1>
-            <button class="btn">Crear Platillo</button>
+            <a href="platillo.html"><button class="btn">Crear Platillo</button></a>
         </div>
         
+        <div class="table-container">
+            <table class="table-menu">
+                <tr class="headers">
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Foto</th>
+                    <th>Precio</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                    <th>Tiempo</th>
+                    <th>Acciones</th> 
+                </tr>
+                    
+                <tr>
+                    <td>1</td>
+                    <td>Boneless</td>
+                    <td><img class="table-img" src="/food/boneless.jpeg" alt=""></td>
+                    <td>$65</td>
+                    <td>Deliciosos boneless bañados...</td>
+                    <td class="disponible">Disponible</td>
+                    <td>15 min.</td>
+                    <td>
+                        <a href="editarplatillo.html"><button class="btn-editar">Editar</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Hamburguesa</td>
+                    <td><img class="table-img" src="/food/hamburguesa.jpeg" alt=""></td>
+                    <td>$65</td>
+                    <td>Exquisita hamburguesa acomp...</td>
+                    <td class="no-disponible"> No Disponible</td>
+                    <td>15 min.</td>
+                    <td>
+                        <a href="editarplatillo.html"><button class="btn-editar">Editar</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Enchiladas</td>
+                    <td><img class="table-img" src="/food/enchiladas.jpeg" alt=""></td>
+                    <td>$65</td>
+                    <td>Tremendas enchiladas rojas...</td>
+                    <td class="disponible">Disponible</td>
+                    <td>15 min.</td>
+                    <td>
+                        <a href="editarplatillo.html"><button class="btn-editar">Editar</button></a>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Boneless</td>
+                    <td><img class="table-img" src="/food/boneless.jpeg" alt=""></td>
+                    <td>$65</td>
+                    <td>Deliciosos boneless bañados...</td>
+                    <td class="disponible">Disponible</td>
+                    <td>15 min.</td>
+                    <td>
+                        <a href="editarplatillo.html"><button class="btn-editar">Editar</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Hamburguesa</td>
+                    <td><img class="table-img" src="/food/hamburguesa.jpeg" alt=""></td>
+                    <td>$65</td>
+                    <td>Exquisita hamburguesa acomp...</td>
+                    <td class="no-disponible"> No Disponible</td>
+                    <td>15 min.</td>
+                    <td>
+                        <a href="editarplatillo.html"><button class="btn-editar">Editar</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Enchiladas</td>
+                    <td><img class="table-img" src="/food/enchiladas.jpeg" alt=""></td>
+                    <td>$65</td>
+                    <td>Tremendas enchiladas rojas...</td>
+                    <td class="disponible">Disponible</td>
+                    <td>15 min.</td>
+                    <td>
+                        <a href="editarplatillo.html"><button class="btn-editar">Editar</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Hamburguesa</td>
+                    <td><img class="table-img" src="/food/hamburguesa.jpeg" alt=""></td>
+                    <td>$65</td>
+                    <td>Exquisita hamburguesa acomp...</td>
+                    <td class="no-disponible"> No Disponible</td>
+                    <td>15 min.</td>
+                    <td>
+                        <a href="editarplatillo.html"><button class="btn-editar">Editar</button></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Enchiladas</td>
+                    <td><img class="table-img" src="/food/enchiladas.jpeg" alt=""></td>
+                    <td>$65</td>
+                    <td>Tremendas enchiladas rojas...</td>
+                    <td class="disponible">Disponible</td>
+                    <td>15 min.</td>
+                    <td>
+                        <a href="editarplatillo.html"><button class="btn-editar">Editar</button></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
        
     </main>
 
