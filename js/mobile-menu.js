@@ -11,3 +11,5 @@ function responsiveNav() {
     const navegacion = document.querySelector('.navigation');
     navegacion.classList.toggle('display')
 }
+
+
